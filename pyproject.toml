@@ -6,6 +6,14 @@ dependencies = [
     "arq>=0.28.0",
     "dotenv>=0.9.9",
     "fastapi>=0.162.2",
+    "langgraph>=1.2.20",
+    "langgraph-checkpoint-postgres>=3.2.0",
+    "psycopg[binary,pool]>=3.3.9",
     "pydantic>=2.14.3",
+    "semantic-router>=1.1.2",
     "uvicorn>=0.54.0",
 ]
+
+[dependency-groups]
+cpu = ["fastembed>=0.3.3",]
+gpu = ["fastembed-gpu>=0.3.3"]
